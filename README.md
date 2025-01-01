@@ -13,7 +13,7 @@
 
 ## 📸 تصاویر نمونه
 
-![صفحه اصلی](https://github.com/noobolism/vahram-story/blob/main/public/pic/home-background.jpg?raw=true)
+![نسخه لایو این داستان روی گیت هاب](https://noobolism.github.io/vahram-story/#/)
 
 ![گام اول داستان](https://github.com/noobolism/vahram-story/blob/main/public/pic/1.webp?raw=true)
 
