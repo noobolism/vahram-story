@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div
       className="min-h-screen bg-cover bg-center relative flex flex-col"
-      style={{ backgroundImage: `url('/pic/home-background.jpg')` }} // اطمینان حاصل کنید که تصویر در مسیر صحیح قرار دارد
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/pic/home-background.jpg)` }} // به‌روز شده
     >
       {/* Overlay برای افزایش خوانایی متن */}
       <div className="absolute inset-0 bg-black opacity-60"></div>

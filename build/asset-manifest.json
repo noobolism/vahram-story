@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bf25eb2.css",
-    "main.js": "/static/js/main.ed98b5e2.js",
-    "index.html": "/index.html",
-    "main.0bf25eb2.css.map": "/static/css/main.0bf25eb2.css.map",
-    "main.ed98b5e2.js.map": "/static/js/main.ed98b5e2.js.map"
+    "main.css": "/vahram-story/static/css/main.0bf25eb2.css",
+    "main.js": "/vahram-story/static/js/main.ebdc9979.js",
+    "index.html": "/vahram-story/index.html",
+    "main.0bf25eb2.css.map": "/vahram-story/static/css/main.0bf25eb2.css.map",
+    "main.ebdc9979.js.map": "/vahram-story/static/js/main.ebdc9979.js.map"
   },
   "entrypoints": [
     "static/css/main.0bf25eb2.css",
-    "static/js/main.ed98b5e2.js"
+    "static/js/main.ebdc9979.js"
   ]
 }

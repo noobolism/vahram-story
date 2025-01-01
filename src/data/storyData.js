@@ -6,7 +6,7 @@ const storyData = {
     choices: [
       { text: "شروع داستان", next: "node1", type: "primary" }
     ],
-    image: "/pic/1.webp",
+    image: `${process.env.PUBLIC_URL}/pic/1.webp`,
   },
   node1: {
     text: "وهرام روی بلندی یک تپه خاکی ایستاده بود. عینک دودی شکسته‌ای روی چشم‌هاش، و باد داغ بیابان لباس کهنه‌اش رو تکون می‌داد. پایین تپه، خرابه‌های سایت هسته‌ای 'سلیمانی' قرار داشت.",
@@ -14,7 +14,7 @@ const storyData = {
       { text: "به داخل سایت برو", next: "node2", type: "primary" },
       { text: "اطراف سایت را بررسی کن", next: "node1_1", type: "secondary" }
     ],
-    image: "/pic/2.webp",
+    image: `${process.env.PUBLIC_URL}/pic/2.webp`,
   },
   node1_1: {
     text: "وهرام تصمیم گرفت ابتدا اطراف سایت را بررسی کند. در حین بررسی، به ماشینی قدیمی برخورد که هنوز مقداری سوخت در مخزنش باقی مانده بود. او مقداری سوخت برداشت و با احتیاط به سمت سایت برگشت.",
@@ -22,7 +22,7 @@ const storyData = {
       { text: "وارد سایت شو", next: "node2", type: "primary" },
       { text: "در اطراف جستجوی بیشتری انجام بده", next: "node1_2", type: "secondary" }
     ],
-    image: "/pic/3.webp",
+    image: `${process.env.PUBLIC_URL}/pic/3.webp`,
   },
   node1_2: {
     text: "در حین جستجوی اطراف، صدای پای چند نفر از سمت پشت تپه شنیده شد. گروهی از غارتگران به سمت سایت می‌آمدند. وهرام مجبور شد سریع تصمیم بگیرد.",
@@ -30,7 +30,7 @@ const storyData = {
       { text: "پنهان شو", next: "node1_3", type: "danger" },
       { text: "مخفیانه وارد سایت شو", next: "node2", type: "primary" }
     ],
-    image: "/pic/4.webp",
+    image: `${process.env.PUBLIC_URL}/pic/4.webp`,
   },
   node1_3: {
     text: "وهرام پشت یک صخره بزرگ پنهان شد. غارتگران از نزدیکی او عبور کردند، اما به سمت سایت رفتند. وهرام حالا می‌توانست به دنبال آن‌ها وارد سایت شود یا منتظر بماند تا از آنجا دور شوند.",
@@ -38,14 +38,14 @@ const storyData = {
       { text: "به دنبال آن‌ها وارد سایت شو", next: "node2", type: "primary" },
       { text: "منتظر بمان", next: "node1_4", type: "secondary" }
     ],
-    image: "/pic/5.webp",
+    image: `${process.env.PUBLIC_URL}/pic/5.webp`,
   },
   node1_4: {
     text: "وهرام منتظر ماند تا غارتگران از سایت دور شوند. پس از اطمینان از امنیت، به داخل سایت رفت.",
     choices: [
       { text: "به داخل سایت برو", next: "node2", type: "primary" }
     ],
-    image: "/pic/6.webp",
+    image: `${process.env.PUBLIC_URL}/pic/6.webp`,
   },
   node2: {
     text: "وارد شدن به سایت، مثل ورود به دنیای ارواح بود. هر قدم که برمی‌داشت، صدای خرد شدن شیشه‌ها و زباله‌ها زیر پاهایش به گوش می‌رسید.",
@@ -53,7 +53,7 @@ const storyData = {
       { text: "مستقیماً به سمت اتاق رآکتور برو", next: "node3", type: "primary" },
       { text: "ابتدا محیط را بررسی کن", next: "node2_1", type: "secondary" }
     ],
-    image: "/pic/7.webp",
+    image: `${process.env.PUBLIC_URL}/pic/7.webp`,
   },
   node2_1: {
     text: "وهرام به یکی از دفاتر قدیمی سایت سر زد و روی میز پوسیده‌ای یک دفترچه پیدا کرد. دفترچه شامل اطلاعاتی درباره پروژه‌های محرمانه و یکی از کدهای دسترسی بود.",
@@ -61,7 +61,7 @@ const storyData = {
       { text: "به سمت اتاق رآکتور برو", next: "node3", type: "primary" },
       { text: "دفترچه را بررسی کن و اطلاعات بیشتری جمع‌آوری کن", next: "node2_2", type: "secondary" }
     ],
-    image: "/pic/8.webp",
+    image: `${process.env.PUBLIC_URL}/pic/8.webp`,
   },
   node2_2: {
     text: "وهرام تصمیم گرفت وقت بگذارد و اطلاعات دفترچه را بررسی کند. در میان نوشته‌ها، به عباراتی اشاره شد که به یک اتاق مخفی زیرزمینی در سایت اشاره داشت.",
@@ -69,7 +69,7 @@ const storyData = {
       { text: "اتاق مخفی را پیدا کن", next: "node2_3", type: "primary" },
       { text: "به سمت اتاق رآکتور برو", next: "node3", type: "secondary" }
     ],
-    image: "/pic/9.webp",
+    image: `${process.env.PUBLIC_URL}/pic/9.webp`,
   },
   node2_3: {
     text: "وهرام با استفاده از نقشه، دریچه‌ای را در کف یکی از سالن‌های متروکه پیدا کرد. دریچه به یک اتاق مخفی زیرزمینی باز می‌شد که پر از تجهیزات علمی قدیمی بود.",
@@ -77,7 +77,7 @@ const storyData = {
       { text: "تجهیزات را بررسی کن", next: "node2_4", type: "secondary" },
       { text: "مستقیماً به اتاق رآکتور برو", next: "node3", type: "primary" }
     ],
-    image: "/pic/10.webp",
+    image: `${process.env.PUBLIC_URL}/pic/10.webp`,
   },
   node2_4: {
     text: "وهرام تجهیزات را بررسی کرد و متوجه شد که این تجهیزات می‌توانند در بازسازی زیرساخت‌ها بسیار مفید باشند. او تصمیم گرفت این تجهیزات را با خود ببرد.",
@@ -85,15 +85,15 @@ const storyData = {
       { text: "به سمت اتاق رآکتور برو", next: "node3", type: "primary" },
       { text: "ادامه به بررسی تجهیزات دیگر", next: "node2_5", type: "secondary" }
     ],
-    image: "/pic/11.webp",
+    image: `${process.env.PUBLIC_URL}/pic/11.webp`,
   },
   node2_5: {
     text: "در حین بررسی تجهیزات، وهرام صدای نزدیکی را شنید. او باید سریع تصمیم بگیرد.",
     choices: [
-      { text: "فشار بیاور و سریع تجهیزات را بردارد", next: "node3", type: "danger" },
+      { text: "فشار بیاور و سریع تجهیزات را بردارد", next: "node3_1", type: "danger" },
       { text: "مخفیانه تجهیزات را جا بگذارد و فرار کند", next: "node4", type: "secondary" }
     ],
-    image: "/pic/12.webp",
+    image: `${process.env.PUBLIC_URL}/pic/12.webp`,
   },
   node3: {
     text: "به اتاق رآکتور رسید. در، با صدای وحشتناکی باز شد و او وارد فضایی شد که بوی فلز و سوختگی غلیظ‌تر بود.",
@@ -101,7 +101,7 @@ const storyData = {
       { text: "دستگاه را بردار و سایت را ترک کن", next: "node4", type: "primary" },
       { text: "به جستجو ادامه بده", next: "node3_1", type: "secondary" }
     ],
-    image: "/pic/13.webp",
+    image: `${process.env.PUBLIC_URL}/pic/13.webp`,
   },
   node3_1: {
     text: "وهرام تصمیم گرفت محیط را بیشتر بررسی کند و در گوشه‌ای از اتاق، مخزن انرژی نیمه‌فعالی را پیدا کرد. این مخزن می‌توانست بسیار خطرناک باشد.",
@@ -109,7 +109,7 @@ const storyData = {
       { text: "مخزن را فعال کن", next: "node4_1", type: "danger" },
       { text: "از مخزن دور شو و دستگاه را بردار", next: "node4", type: "secondary" }
     ],
-    image: "/pic/14.webp",
+    image: `${process.env.PUBLIC_URL}/pic/14.webp`,
   },
   node4: {
     text: "وهرام دستگاه را برداشت و تصمیم گرفت به سرعت از سایت خارج شود. اما در راه خروج، سایه‌ای در انتهای راهرو ظاهر شد.",
@@ -117,7 +117,7 @@ const storyData = {
       { text: "به سایه نزدیک شو", next: "node4_1", type: "danger" },
       { text: "از راه دیگری فرار کن", next: "node5", type: "secondary" }
     ],
-    image: "/pic/15.webp",
+    image: `${process.env.PUBLIC_URL}/pic/15.webp`,
   },
   node4_1: {
     text: "وهرام مخزن را فعال کرد. ناگهان نور سبزرنگی کل اتاق را فرا گرفت و لرزش‌های شدیدی در ساختمان ایجاد شد.",
@@ -125,7 +125,7 @@ const storyData = {
       { text: "از سایت فرار کن", next: "node5", type: "primary" },
       { text: "به بررسی ادامه بده", next: "node6", type: "secondary" }
     ],
-    image: "/pic/16.webp",
+    image: `${process.env.PUBLIC_URL}/pic/16.webp`,
   },
   node5: {
     text: "وهرام به سایه نزدیک شد و متوجه شد که این یک ربات قدیمی است. این ربات هنوز فعال بود و برنامه‌ای برای حفاظت از سایت داشت.",
@@ -133,7 +133,7 @@ const storyData = {
       { text: "ربات را غیرفعال کن", next: "node6", type: "danger" },
       { text: "با ربات صحبت کن", next: "node7", type: "secondary" }
     ],
-    image: "/pic/17.webp",
+    image: `${process.env.PUBLIC_URL}/pic/17.webp`,
   },
   node6: {
     text: "وهرام تلاش کرد از سایت فرار کند، اما گروهی از کلاغ‌های سیاه در کمین او بودند.",
@@ -141,7 +141,7 @@ const storyData = {
       { text: "با آن‌ها مبارزه کن", next: "node8", type: "danger" },
       { text: "پنهان شو", next: "node9", type: "secondary" }
     ],
-    image: "/pic/18.webp",
+    image: `${process.env.PUBLIC_URL}/pic/18.webp`,
   },
   node7: {
     text: "ربات با صدای مکانیکی گفت: 'تو اجازه ورود به اینجا را نداری. هدف خود را مشخص کن.'",
@@ -149,7 +149,7 @@ const storyData = {
       { text: "گفتن حقیقت", next: "node10", type: "primary" },
       { text: "دروغ گفتن و فریب ربات", next: "node11", type: "danger" }
     ],
-    image: "/pic/19.webp",
+    image: `${process.env.PUBLIC_URL}/pic/19.webp`,
   },
   node8: {
     text: "وهرام با استفاده از ابزاری که در کوله داشت، موفق شد یکی از کلاغ‌های سیاه را زمین‌گیر کند. اما تعداد آن‌ها زیاد بود.",
@@ -157,7 +157,7 @@ const storyData = {
       { text: "به سمت کوه فرار کن", next: "node12", type: "primary" },
       { text: "مبارزه را ادامه بده", next: "node13", type: "danger" }
     ],
-    image: "/pic/20.webp",
+    image: `${process.env.PUBLIC_URL}/pic/20.webp`,
   },
   node9: {
     text: "وهرام پشت تخته‌سنگی پنهان شد و کلاغ‌های سیاه بدون متوجه شدن از او عبور کردند.",
@@ -165,7 +165,7 @@ const storyData = {
       { text: "به مسیر ادامه بده", next: "node14", type: "primary" },
       { text: "به کمپ اصلی کلاغ‌ها نزدیک شو", next: "node15", type: "secondary" }
     ],
-    image: "/pic/21.webp",
+    image: `${process.env.PUBLIC_URL}/pic/21.webp`,
   },
   node10: {
     text: "وهرام تصمیم گرفت حقیقت را بگوید: 'من دنبال راهی برای احیای زندگی هستم و می‌خواهم از این انرژی پایدار استفاده کنم تا دنیای ویران‌شده را بازسازی کنم.'",
@@ -173,7 +173,7 @@ const storyData = {
       { text: "پیشنهاد همکاری بده", next: "node16", type: "primary" },
       { text: "از سایت فرار کن", next: "node17", type: "danger" }
     ],
-    image: "/pic/22.webp",
+    image: `${process.env.PUBLIC_URL}/pic/22.webp`,
   },
   node11: {
     text: "وهرام به ربات گفت که تنها یک مسافر است و به دنبال پناهگاهی برای زنده ماندن می‌گردد. ربات با شک و تردید گفت: 'اگر چیزی برای ارائه داری، شاید بگذارم زنده بمونی.'",
@@ -181,7 +181,7 @@ const storyData = {
       { text: "اطلاعات جعلی ارائه بده", next: "node18", type: "danger" },
       { text: "واقعیت را درباره مخزن انرژی بگو", next: "node19", type: "primary" }
     ],
-    image: "/pic/23.webp",
+    image: `${process.env.PUBLIC_URL}/pic/23.webp`,
   },
   node12: {
     text: "وهرام به سرعت به سمت کوه‌ها فرار کرد. او به نقطه‌ای امن رسید و تصمیم گرفت مسیر خود را به سمت نقشه‌ای که در دفترچه دیده بود، ادامه دهد.",
@@ -189,7 +189,7 @@ const storyData = {
       { text: "به سمت نقشه زاگرس ادامه بده", next: "node20", type: "primary" },
       { text: "به دنبال متحدین بیشتر بگرد", next: "node21", type: "secondary" }
     ],
-    image: "/pic/24.webp",
+    image: `${process.env.PUBLIC_URL}/pic/24.webp`,
   },
   node13: {
     text: "مبارزه ادامه یافت و وهرام با سختی توانست چند نفر از کلاغ‌های سیاه را شکست دهد، اما تعداد آن‌ها کم نشد.",
@@ -197,7 +197,7 @@ const storyData = {
       { text: "به سمت تونل‌های زیرزمینی فرار کن", next: "node22", type: "primary" },
       { text: "پنهان شو و منتظر بمان", next: "node23", type: "secondary" }
     ],
-    image: "/pic/25.webp",
+    image: `${process.env.PUBLIC_URL}/pic/25.webp`,
   },
   node14: {
     text: "وهرام به مسیر خود ادامه داد و از سایت دور شد.",
@@ -205,7 +205,7 @@ const storyData = {
       { text: "به مسیر زاگرس ادامه بده", next: "node20", type: "primary" },
       { text: "به دنبال سرنخ‌های دیگر بگرد", next: "node24", type: "secondary" }
     ],
-    image: "/pic/26.webp",
+    image: `${process.env.PUBLIC_URL}/pic/26.webp`,
   },
   node15: {
     text: "وهرام تصمیم گرفت به کمپ اصلی کلاغ‌ها نزدیک شود تا بتواند اطلاعات بیشتری درباره آن‌ها کسب کند.",
@@ -213,7 +213,7 @@ const storyData = {
       { text: "مخفیانه به کمپ نزدیک شو", next: "node25", type: "secondary" },
       { text: "مستقیماً وارد کمپ شو", next: "node26", type: "danger" }
     ],
-    image: "/pic/27.webp",
+    image: `${process.env.PUBLIC_URL}/pic/27.webp`,
   },
   node16: {
     text: "ربات با دقت گفت: 'اگر همکاری کنی، شاید بتونیم با هم به اهدافمان برسیم.'",
@@ -221,7 +221,7 @@ const storyData = {
       { text: "پیشنهاد همکاری را قبول کن", next: "node27", type: "success" },
       { text: "پیشنهاد را رد کن و فرار کن", next: "node28", type: "danger" }
     ],
-    image: "/pic/28.webp",
+    image: `${process.env.PUBLIC_URL}/pic/28.webp`,
   },
   node17: {
     text: "وهرام تصمیم گرفت به سرعت از سایت فرار کند. او موفق شد از سایت خارج شود و به سمت زاگرس حرکت کند.",
@@ -229,7 +229,7 @@ const storyData = {
       { text: "به سمت زاگرس ادامه بده", next: "node20", type: "primary" },
       { text: "به دنبال سرنخ‌های دیگر بگرد", next: "node24", type: "secondary" }
     ],
-    image: "/pic/29.webp",
+    image: `${process.env.PUBLIC_URL}/pic/29.webp`,
   },
   node18: {
     text: "وهرام اطلاعات جعلی درباره یافتن چیزی در سایت متروکه ارائه داد. ربات با شک و تردید گفت: 'باشه، اما اگر دروغ گفتی، زندگیت رو با دستای خودم می‌گیرم!' وهرام به طور موقت آزاد شد، اما همچنان تحت نظر بود.",
@@ -237,7 +237,7 @@ const storyData = {
       { text: "فرار کن و به مسیر خود ادامه بده", next: "node29", type: "primary" },
       { text: "در کمپ کلاغ‌ها اطلاعات جمع‌آوری کن", next: "node30", type: "secondary" }
     ],
-    image: "/pic/30.webp",
+    image: `${process.env.PUBLIC_URL}/pic/30.webp`,
   },
   node19: {
     text: "وهرام حقیقت را درباره مخزن انرژی گفت و توضیح داد که این انرژی می‌تواند به بازسازی دنیا کمک کند.",
@@ -245,7 +245,7 @@ const storyData = {
       { text: "پیشنهاد همکاری بده", next: "node31", type: "success" },
       { text: "از سایت فرار کن", next: "node29", type: "danger" }
     ],
-    image: "/pic/31.webp",
+    image: `${process.env.PUBLIC_URL}/pic/31.webp`,
   },
   node20: {
     text: "وهرام مسیر خود را به سمت زاگرس ادامه داد. عبور از کویر، سخت‌ترین مرحله بود. روزها گرمای طاقت‌فرسا و شب‌ها سرمای کشنده. آبش کم شده بود و سایه‌ای برای استراحت وجود نداشت.",
@@ -253,7 +253,7 @@ const storyData = {
       { text: "به مسیر زاگرس ادامه بده", next: "node21", type: "primary" },
       { text: "به دنبال تجهیزات بیشتر در کمپ متروکه بگرد", next: "node20_1", type: "secondary" }
     ],
-    image: "/pic/32.webp",
+    image: `${process.env.PUBLIC_URL}/pic/32.webp`,
   },
   node20_1: {
     text: "وهرام در کمپ متروکه وسایل قدیمی از جمله یک سلاح ابتدایی و مقداری آب پیدا کرد. اما صدای قدم‌هایی که نزدیک می‌شد، او را وادار به تصمیم‌گیری سریع کرد.",
@@ -261,7 +261,7 @@ const storyData = {
       { text: "پنهان شو و منتظر باش تا خطر رفع شود", next: "node20_2", type: "secondary" },
       { text: "کمپ را سریع ترک کن و به مسیر زاگرس ادامه بده", next: "node21", type: "primary" }
     ],
-    image: "/pic/33.webp",
+    image: `${process.env.PUBLIC_URL}/pic/33.webp`,
   },
   node20_2: {
     text: "وهرام در سایه یکی از چادرهای متروکه پنهان شد. گروهی از کلاغ‌های سیاه از آنجا عبور کردند، اما متوجه حضور او نشدند. او حالا می‌توانست به مسیرش ادامه دهد.",
@@ -269,7 +269,7 @@ const storyData = {
       { text: "به سمت زاگرس ادامه بده", next: "node21", type: "primary" },
       { text: "به دنبال بازماندگان جدید بگرد", next: "node22", type: "secondary" }
     ],
-    image: "/pic/34.webp",
+    image: `${process.env.PUBLIC_URL}/pic/34.webp`,
   },
   node21: {
     text: "وهرام به کمپ متروکه رسید. اینجا زمانی پناهگاه گروهی از بازماندگان بوده که رد پای زندگی آن‌ها هنوز دیده می‌شد: وسایل شکسته، کنده‌کاری‌های روی چوب‌ها و استخوان‌های قدیمی. روی یکی از دیوارهای چادر اصلی، پیامی با خون نوشته شده بود: 'به کسی اعتماد نکن.'",
@@ -277,7 +277,7 @@ const storyData = {
       { text: "کمپ را به‌دقت جستجو کن", next: "node21_1", type: "primary" },
       { text: "کمپ را ترک کن و به سمت زاگرس ادامه بده", next: "node22", type: "secondary" }
     ],
-    image: "/pic/35.webp",
+    image: `${process.env.PUBLIC_URL}/pic/35.webp`,
   },
   node21_1: {
     text: "وهرام در میان بقایای کمپ، یک دستگاه قدیمی و آسیب‌دیده پیدا کرد که به نظر می‌رسید یک فرستنده رادیویی باشد. با بررسی آن، متوجه شد که سیگنال‌هایی به منطقه‌ای در نزدیکی زاگرس ارسال می‌شده است. او تصمیم گرفت دستگاه را با خود ببرد.",
@@ -285,7 +285,7 @@ const storyData = {
       { text: "به سیگنال‌ها توجه کن و مسیرت را تغییر بده", next: "node21_2", type: "primary" },
       { text: "دستگاه را بردار و به مسیر اصلی زاگرس ادامه بده", next: "node22", type: "secondary" }
     ],
-    image: "/pic/36.webp",
+    image: `${process.env.PUBLIC_URL}/pic/36.webp`,
   },
   node21_2: {
     text: "وهرام مسیر سیگنال‌های رادیویی را دنبال کرد و به یک ایستگاه مخفی در دل بیابان رسید. ایستگاه، به نظر می‌رسید هنوز فعال باشد، اما هیچ‌کس در آنجا نبود. او داخل شد و شروع به بررسی کرد.",
@@ -293,7 +293,7 @@ const storyData = {
       { text: "سیستم‌های ایستگاه را فعال کن", next: "node21_3", type: "primary" },
       { text: "ایستگاه را ترک کن و به مسیر خود ادامه بده", next: "node22", type: "secondary" }
     ],
-    image: "/pic/37.webp",
+    image: `${process.env.PUBLIC_URL}/pic/37.webp`,
   },
   node21_3: {
     text: "وهرام با استفاده از ابزارهایش توانست بخشی از سیستم‌های ایستگاه را روشن کند. او موفق شد پیامی رمزنگاری‌شده پیدا کند که به نظر می‌رسید توسط یکی از گروه‌های مقاومت در برابر کلاغ‌های سیاه ارسال شده باشد. پیام می‌گفت: 'اگر این پیام را می‌خوانی، ما هنوز مقاومت می‌کنیم. بیا به زاگرس، کمپ دژ. ما در انتظار تو هستیم.'",
@@ -301,7 +301,7 @@ const storyData = {
       { text: "به کمپ دژ بپیوند و با مقاومت همراه شو", next: "node22_1", type: "primary" },
       { text: "مستقیماً به مخزن انرژی زاگرس برو", next: "node22", type: "danger" }
     ],
-    image: "/pic/38.webp",
+    image: `${process.env.PUBLIC_URL}/pic/38.webp`,
   },
   node22: {
     text: "وهرام تصمیم گرفت مسیر خود را به سمت زاگرس ادامه دهد. در نزدیکی زاگرس، توسط کلاغ‌های سیاه گرفتار شد. آن‌ها او را به کمپ اصلی خود بردند. رهبرشان، تیمور، مردی بلندقد با یک بازوی مکانیکی بود.",
@@ -309,7 +309,7 @@ const storyData = {
       { text: "حقیقت را بگو و پیشنهاد همکاری بده", next: "node23", type: "primary" },
       { text: "دروغ بگو و تظاهر کن که یک مسافر بی‌گناه هستی", next: "node24", type: "danger" }
     ],
-    image: "/pic/39.webp",
+    image: `${process.env.PUBLIC_URL}/pic/39.webp`,
   },
   node22_1: {
     text: "وهرام به کمپ دژ پیوست و با گروه مقاومت روبه‌رو شد. آن‌ها از ورود او تعجب کردند، اما یکی از رهبران آن‌ها که زنی به نام 'نسا' بود، به گرمی او را پذیرفت.",
@@ -317,7 +317,7 @@ const storyData = {
       { text: "با مقاومت همکاری کن و نقشه‌ای برای حمله به کلاغ‌ها طراحی کن", next: "node22_1_1", type: "primary" },
       { text: "مخفیانه اطلاعات جمع کن و به مسیر خود ادامه بده", next: "node22_2", type: "secondary" }
     ],
-    image: "/pic/40.webp",
+    image: `${process.env.PUBLIC_URL}/pic/40.webp`,
   },
   node22_1_1: {
     text: "نسا و وهرام نقشه‌ای برای حمله به کمپ کلاغ‌ها طراحی کردند. آن‌ها قصد داشتند با ایجاد یک حواس‌پرتی بزرگ، تیمور را از مخفیگاهش بیرون بکشند.",
@@ -325,7 +325,7 @@ const storyData = {
       { text: "مستقیماً در حمله شرکت کن", next: "node25", type: "primary" },
       { text: "به تنهایی به دنبال تیمور برو", next: "node24", type: "danger" }
     ],
-    image: "/pic/41.webp",
+    image: `${process.env.PUBLIC_URL}/pic/41.webp`,
   },
   node22_2: {
     text: "وهرام مخفیانه اطلاعات جمع‌آوری کرد و تصمیم گرفت به مسیر خود ادامه دهد تا بتواند به تنهایی مخزن انرژی را نابود کند.",
@@ -333,7 +333,7 @@ const storyData = {
       { text: "مخزن را نابود کن", next: "node25", type: "danger" },
       { text: "اطلاعات را به مقاومت منتقل کن", next: "node23", type: "secondary" }
     ],
-    image: "/pic/42.webp",
+    image: `${process.env.PUBLIC_URL}/pic/42.webp`,
   },
   node23: {
     text: "وهرام حقیقت را درباره مخزن انرژی گفت و توضیح داد که این انرژی می‌تواند به بازسازی دنیا کمک کند. تیمور با دقت گوش داد و گفت: 'اگر چیزی که می‌گویی درست باشد، می‌توانیم همکاری کنیم.'",
@@ -341,7 +341,7 @@ const storyData = {
       { text: "همکاری با تیمور برای رسیدن به مخزن انرژی", next: "node26", type: "success" },
       { text: "نقشه‌ای برای فریب او طراحی کن", next: "node27", type: "danger" }
     ],
-    image: "/pic/43.webp",
+    image: `${process.env.PUBLIC_URL}/pic/43.webp`,
   },
   node24: {
     text: "وهرام با تیمور گفت که تنها یک مسافر است و به دنبال پناهگاهی برای زنده ماندن می‌گردد. تیمور شک داشت، اما گفت: 'اگر چیزی برای ارائه داری، شاید بگذارم زنده بمونی.'",
@@ -349,7 +349,7 @@ const storyData = {
       { text: "اطلاعات جعلی ارائه بده", next: "node28", type: "danger" },
       { text: "واقعیت را درباره مخزن انرژی بگو", next: "node29", type: "primary" }
     ],
-    image: "/pic/44.webp",
+    image: `${process.env.PUBLIC_URL}/pic/44.webp`,
   },
   node25: {
     text: "وهرام با استفاده از دانش و ابزارهایش موفق شد مخزن انرژی را نابود کند. تیمور متوجه شد و با عصبانیت فریاد زد، اما وهرام به سرعت از کمپ فرار کرد. انفجار مخزن انرژی باعث نابودی تیمور و کلاغ‌های سیاه شد.",
@@ -357,7 +357,7 @@ const storyData = {
       { text: "به مسیر خود ادامه بده و از منطقه دور شو", next: "end5", type: "primary" },
       { text: "به سمت گروه مقاومت برو و درباره موفقیت خود گزارش بده", next: "node30", type: "secondary" }
     ],
-    image: "/pic/45.webp",
+    image: `${process.env.PUBLIC_URL}/pic/45.webp`,
   },
   node26: {
     text: "وهرام با تیمور همراه شد. در مسیر، او مدام به راهی برای فرار یا خنثی کردن تیمور فکر می‌کرد. وقتی به نزدیکی مخزن انرژی رسیدند، تیمور با پوزخندی گفت: 'این همون چیزیه که می‌خواستی؟ حالا نشونم بده چطور کار می‌کنه.'",
@@ -365,7 +365,7 @@ const storyData = {
       { text: "دستگاه را فعال کن و تیمور را فریب بده", next: "node30_1", type: "danger" },
       { text: "دستگاه را نابود کن و از انرژی برای نابودی تیمور استفاده کن", next: "node30_2", type: "danger" }
     ],
-    image: "/pic/46.webp",
+    image: `${process.env.PUBLIC_URL}/pic/46.webp`,
   },
   node27: {
     text: "وهرام نقشه‌ای برای فریب تیمور طراحی کرد. او تصمیم گرفت دستگاه را باز کند و تیمور را در حین تنظیمات مخزن فریب دهد.",
@@ -373,7 +373,7 @@ const storyData = {
       { text: "انفجار را فعال کن و از هرج‌ومرج استفاده کن تا فرار کنی", next: "node30_3", type: "danger" },
       { text: "منتظر بمان و از نزدیک رفتار تیمور را زیر نظر بگیر", next: "node30_4", type: "secondary" }
     ],
-    image: "/pic/47.webp",
+    image: `${process.env.PUBLIC_URL}/pic/47.webp`,
   },
   node28: {
     text: "وهرام اطلاعات جعلی درباره یافتن چیزی در سایت متروکه ارائه داد. تیمور با عصبانیت گفت: 'اگر بفهمم دروغ می‌گی، زندگیت رو با دستای خودم می‌گیرم!' وهرام به طور موقت آزاد شد، اما همچنان تحت نظر بود.",
@@ -381,7 +381,7 @@ const storyData = {
       { text: "فرار کن و به مسیر خود ادامه بده", next: "node29", type: "primary" },
       { text: "در کمپ کلاغ‌ها اطلاعات جمع‌آوری کن", next: "node30", type: "secondary" }
     ],
-    image: "/pic/48.webp",
+    image: `${process.env.PUBLIC_URL}/pic/48.webp`,
   },
   node29: {
     text: "وهرام تصمیم گرفت حقیقت را درباره مخزن انرژی بگوید و توضیح داد که این انرژی می‌تواند به بازسازی دنیا کمک کند. تیمور متوجه شد و تصمیم گرفت همکاری کند.",
@@ -389,7 +389,7 @@ const storyData = {
       { text: "همکاری با تیمور برای رسیدن به مخزن انرژی", next: "node26", type: "success" },
       { text: "از سایت فرار کن", next: "node30_5", type: "danger" }
     ],
-    image: "/pic/49.webp",
+    image: `${process.env.PUBLIC_URL}/pic/49.webp`,
   },
   node30: {
     text: "وهرام به گروه مقاومت پیوست و تصمیم گرفت با همکاری آن‌ها حمله‌ای نهایی به کلاغ‌های سیاه ترتیب دهد تا مانع استفاده آن‌ها از انرژی پایدار شود.",
@@ -397,7 +397,7 @@ const storyData = {
       { text: "حمله به کلاغ‌ها", next: "end5", type: "primary" },
       { text: "مذاکره با کلاغ‌ها", next: "end6", type: "secondary" }
     ],
-    image: "/pic/50.webp",
+    image: `${process.env.PUBLIC_URL}/pic/50.webp`,
   },
   node30_1: {
     text: "وهرام دستگاه را فعال کرد و تیمور را فریب داد. در همین حین، وهرام دستگیره‌ای را چرخاند که باعث انفجار کوچکی در سیستم شد. هرج‌ومرج به پا شد و وهرام موفق شد از مخزن انرژی فرار کند.",
@@ -405,7 +405,7 @@ const storyData = {
       { text: "انفجار را فعال کن و از هرج‌ومرج استفاده کن تا فرار کنی", next: "end5", type: "danger" },
       { text: "منتظر بمان و از نزدیک رفتار تیمور را زیر نظر بگیر", next: "node30_4", type: "secondary" }
     ],
-    image: "/pic/51.webp",
+    image: `${process.env.PUBLIC_URL}/pic/51.webp`,
   },
   node30_2: {
     text: "وهرام تصمیم گرفت دستگاه را نابود کند و از انرژی برای نابودی تیمور استفاده کند. انرژی مخزن به ناپایداری رسید و انفجاری مهیب رخ داد که تیمور را نابود کرد.",
@@ -413,7 +413,7 @@ const storyData = {
       { text: "به مسیر خود ادامه بده و از منطقه دور شو", next: "end5", type: "primary" },
       { text: "به سمت گروه مقاومت برو و درباره موفقیت خود گزارش بده", next: "node30", type: "secondary" }
     ],
-    image: "/pic/52.webp",
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node30_3: {
     text: "وهرام انفجار را فعال کرد و از هرج‌ومرج استفاده کرد تا فرار کند. انفجار مخزن انرژی باعث نابودی تیمور و کلاغ‌های سیاه شد.",
@@ -421,7 +421,7 @@ const storyData = {
       { text: "به مسیر خود ادامه بده و از منطقه دور شو", next: "end5", type: "primary" },
       { text: "به سمت گروه مقاومت برو و درباره موفقیت خود گزارش بده", next: "node30", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node30_4: {
     text: "وهرام منتظر ماند تا تیمور جزئیات نقشه‌اش را فاش کند. تیمور گفت: 'این انرژی، کل شهرهای اطراف رو به زانو درمیاره. هیچ‌کس نمی‌تونه در برابر ما مقاومت کنه.'",
@@ -429,7 +429,7 @@ const storyData = {
       { text: "نقشه را نابود کن و انرژی را برای استفاده تیمور غیرقابل دسترس کن", next: "node30_6", type: "danger" },
       { text: "منتظر فرصت مناسب برای حمله باش", next: "node30_7", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node30_5: {
     text: "وهرام با سرعت از کمپ خارج شد و به مسیر خود ادامه داد. او هنوز اطلاعات و تکنولوژی‌هایی در اختیار داشت که می‌توانست برای نابودی کلاغ‌ها استفاده کند.",
@@ -437,7 +437,7 @@ const storyData = {
       { text: "به مسیر زاگرس ادامه بده", next: "node21", type: "primary" },
       { text: "به دنبال سرنخ‌های دیگر بگرد", next: "node24", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node30_6: {
     text: "وهرام نقشه را نابود کرد و انرژی را برای استفاده تیمور غیرقابل دسترس کرد. تیمور از عصبانیت فریاد زد، اما قبل از اینکه بتواند کاری کند، افرادش شروع به شورش کردند.",
@@ -445,7 +445,7 @@ const storyData = {
       { text: "از هرج‌ومرج استفاده کن و فرار کن", next: "end5", type: "primary" },
       { text: "تلاش کن تیمور را در هرج‌ومرج از بین ببری", next: "node30_8", type: "danger" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node30_7: {
     text: "وهرام تصمیم گرفت منتظر فرصت مناسب برای حمله باشد. در لحظه مناسب، او با گروه مقاومت حمله‌ای هماهنگ ترتیب داد و تیمور را نابود کرد.",
@@ -453,7 +453,7 @@ const storyData = {
       { text: "به مسیر خود ادامه بده و از منطقه دور شو", next: "end5", type: "primary" },
       { text: "به سمت گروه مقاومت برو و درباره موفقیت خود گزارش بده", next: "node30", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node30_8: {
     text: "در هرج‌ومرج، وهرام موفق شد با استفاده از یک قطعه فلزی، تیمور را از پا درآورد. افراد تیمور که شاهد سقوط رهبرشان بودند، فرار کردند یا تسلیم شدند.",
@@ -461,7 +461,7 @@ const storyData = {
       { text: "از کمپ کلاغ‌ها برای یافتن تجهیزات و اطلاعات استفاده کن", next: "node30_9", type: "primary" },
       { text: "کمپ را ترک کن و به مسیر خود ادامه بده", next: "end5", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node30_9: {
     text: "وهرام در کمپ کلاغ‌ها موفق شد به تجهیزات پیشرفته‌ای دست پیدا کند که احتمالاً از سایت‌های دیگر به سرقت برده شده بودند. یکی از نقشه‌ها به سایت هسته‌ای دیگری اشاره داشت که در نزدیکی خلیج فارس واقع شده بود.",
@@ -469,7 +469,7 @@ const storyData = {
       { text: "به سایت خلیج فارس برو", next: "node31", type: "primary" },
       { text: "به دنبال سرنخ‌های دیگر در زاگرس بگرد", next: "node21", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node31: {
     text: "وهرام به سایت جدیدی در نزدیکی خلیج فارس رسید. این سایت، بسیار آسیب‌دیده و پر از تشعشعات بود، اما به نظر می‌رسید که اطلاعات مهمی در سیستم‌های آن مخفی شده است.",
@@ -477,7 +477,7 @@ const storyData = {
       { text: "به بررسی دقیق سایت بپرداز", next: "node31_1", type: "primary" },
       { text: "به دنبال تجهیزات بگرد تا سایت را ایمن‌تر کنی", next: "node31_2", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node31_1: {
     text: "در میان بقایای سایت، وهرام موفق شد به اطلاعاتی درباره یک پروژه پیشرفته دست پیدا کند که شاید کلید نجات زمین باشد. اما او برای استفاده از این اطلاعات به زمان و تجهیزات بیشتری نیاز داشت.",
@@ -485,7 +485,7 @@ const storyData = {
       { text: "به دنبال متحدین برای ادامه کار بگرد", next: "node32", type: "primary" },
       { text: "مستقیماً روی پروژه کار کن", next: "node33", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node31_2: {
     text: "وهرام به دنبال تجهیزات بیشتری گشت تا سایت را ایمن‌تر کند. او موفق شد یک سیستم فیلتر جدید پیدا کند که می‌توانست تشعشعات را کاهش دهد.",
@@ -493,7 +493,7 @@ const storyData = {
       { text: "سیستم فیلتر را نصب کن و سایت را ایمن‌تر کن", next: "node31_3", type: "success" },
       { text: "تجهیزات را برای استفاده بعدی ذخیره کن", next: "node31_4", type: "secondary" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node31_3: {
     text: "وهرام سیستم فیلتر را نصب کرد و سایت را ایمن‌تر کرد. او موفق شد به اطلاعات پروژه پیشرفته دست پیدا کند و تصمیم گرفت که به سمت بازماندگان بازگردد.",
@@ -501,7 +501,7 @@ const storyData = {
       { text: "به گروه مقاومت بپیوندد", next: "end1", type: "success" },
       { text: "تلاش برای بازسازی دنیا را شروع کن", next: "end2", type: "success" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   node31_4: {
     text: "وهرام تجهیزات را برای استفاده بعدی ذخیره کرد و تصمیم گرفت که از سایت خارج شود تا بتواند به بازماندگان کمک کند.",
@@ -509,49 +509,49 @@ const storyData = {
       { text: "به گروه مقاومت بپیوندد", next: "end1", type: "success" },
       { text: "تلاش برای بازسازی دنیا را شروع کن", next: "end2", type: "success" }
     ],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   
   // پایان‌های مختلف
   end1: {
     text: "وهرام با موفقیت پایگاه اصلی خود را گسترش می‌دهد و با استفاده از فناوری انرژی پایدار، به بازسازی زیرساخت‌های جهان کمک می‌کند. او شبکه‌ای از بازماندگان و متحدین تشکیل می‌دهد که به تدریج به یک نیروی بزرگ تبدیل می‌شوند. اما تهدید کلاغ‌های سیاه همچنان باقی است و سوال این است: آیا این اتحاد می‌تواند برای همیشه دوام بیاورد، یا دنیای جدید دوباره درگیر جنگ خواهد شد؟",
     choices: [],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   end2: {
     text: "وهرام تصمیم گرفت تمام دانش و تجهیزاتی که به دست آورده بود، برای بازسازی بخشی از جهان استفاده کند. او در نزدیکی یک رودخانه در دامنه کوه‌های زاگرس، کمپ کوچکی راه‌اندازی کرد. این کمپ، به محلی برای تجمع بازماندگان تبدیل شد؛ افرادی که به دنبال شروعی دوباره بودند. وهرام با استفاده از انرژی پایدار و فناوری‌های قدیمی، توانست سیستم‌های ابتدایی آب و برق را دوباره راه‌اندازی کند. این کار، نور امیدی را در دل مردم زنده کرد، اما همچنان خطرات زیادی در کمین بود: کلاغ‌های سیاه، دیگر بازماندگان متخاصم، و طبیعت بی‌رحم.",
     choices: [],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   end3: {
     text: "وهرام با نابود کردن سلاح، مانع از فاجعه‌ای جدید شد. اما در این مسیر، بازماندگان زیادی از دست رفتند.",
     choices: [],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   end4: {
     text: "حمله موفقیت‌آمیز بود و کلاغ‌های سیاه از بین رفتند. بازماندگان حالا فرصتی برای بازسازی داشتند.",
     choices: [],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   end5: {
     text: "وهرام با موفقیت مخزن انرژی را نابود کرد و کلاغ‌های سیاه از بین رفتند. او به مسیر خود ادامه داد و از منطقه دور شد. پس از مدتی، او به گروه مقاومت پیوست و با هم، شروع به بازسازی دنیا کردند.",
     choices: [],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   end6: {
     text: "وهرام با کلاغ‌های سیاه مذاکره کرد و آن‌ها را متقاعد کرد که انرژی را برای بازسازی دنیا استفاده کنند. اما اعتماد به آن‌ها ممکن است عواقبی داشته باشد.",
     choices: [],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   end7: {
     text: "وهرام تصمیم گرفت زندگی انفرادی را در دل کوه‌ها ادامه دهد و روی پروژه‌های علمی خود کار کند. سرنوشت دنیا مبهم باقی ماند.",
     choices: [],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   end8: {
     text: "وهرام موفق شد انرژی مخزن را نابود کند و تیمور را شکست دهد. با این حال، بازماندگان بیشتری نیاز به راهنمایی و بازسازی داشتند.",
     choices: [],
-    image: "/pic/52.webp", // Reusing image52.webp as default
+    image: `${process.env.PUBLIC_URL}/pic/52.webp`,
   },
   
   // سایر پایان‌ها و نودهای اضافی می‌توانند در اینجا اضافه شوند
