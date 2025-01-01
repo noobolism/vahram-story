@@ -9,7 +9,7 @@ const StoryNode = ({ text, choices, onChoice, image }) => {
     <motion.div
       className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
       style={{
-        backgroundImage: `url(${image})`, // اکنون مسیر صحیح به وسیله‌ی PUBLIC_URL اضافه شده
+        backgroundImage: `url(${image})`,
       }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
