@@ -9,7 +9,7 @@ const StoryNode = ({ text, choices, onChoice, image }) => {
     <motion.div
       className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundImage: `url(${image})`, // استفاده از backticks
       }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -30,7 +30,7 @@ const StoryNode = ({ text, choices, onChoice, image }) => {
               <ChoiceButton
                 key={index}
                 text={choice.text}
-                onClick={() => onChoice(choice.next)}
+                onClick={() => onChoice(choice.nextNode)} // تغییر از choice.next به choice.nextNode
                 type={choice.type} // ارسال نوع به ChoiceButton
               />
             ))}

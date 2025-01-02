@@ -6,21 +6,35 @@ import StoryNode from "../components/StoryNode";
 import Navbar from "../components/Navbar";
 
 const StoryPage = () => {
-  const [currentNode, setCurrentNode] = useState("intro");
+  // تغییر از "intro" به "start"
+  const [currentNode, setCurrentNode] = useState("start");
 
   const handleChoice = (nextNode) => {
     setCurrentNode(nextNode);
   };
 
-  const currentData = storyData[currentNode];
+  // پیدا کردن نود جاری با استفاده از find
+  const currentData = storyData.find(node => node.id === currentNode);
 
-  // Handle invalid node
+  // مدیریت نودهای نامعتبر
   if (!currentData) {
     return (
       <div className="min-h-screen bg-gray-900 text-gray-200 p-6">
         <Navbar />
         <div className="flex justify-center items-center h-full">
           <p>خطا: نود داستان یافت نشد.</p>
+        </div>
+      </div>
+    );
+  }
+
+  // مدیریت نود پایان داستان
+  if (currentNode === "end") {
+    return (
+      <div className="min-h-screen bg-gray-900 text-gray-200 p-6">
+        <Navbar />
+        <div className="flex justify-center items-center h-full">
+          <p>داستان به پایان رسید. ممنون که بازی کردید!</p>
         </div>
       </div>
     );
@@ -33,7 +47,7 @@ const StoryPage = () => {
         text={currentData.text}
         choices={currentData.choices}
         onChoice={handleChoice}
-        image={currentData.image} // Pass the image prop
+        image={currentData.image} // ارسال تصویر به کامپوننت StoryNode
       />
     </div>
   );

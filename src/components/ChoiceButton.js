@@ -28,7 +28,7 @@ const ChoiceButton = ({ text, onClick, type }) => {
   return (
     <button
       onClick={onClick}
-      className={`${baseClasses} ${variantClasses}`}
+      className={`${baseClasses} ${variantClasses}`} // استفاده از backticks
     >
       {text}
     </button>

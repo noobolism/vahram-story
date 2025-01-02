@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div
       className="min-h-screen bg-cover bg-center relative flex flex-col"
-      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/pic/home-background.jpg)` }}
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/pic/home-background.jpg)` }} // استفاده از backticks
     >
       {/* Overlay برای افزایش خوانایی متن */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
