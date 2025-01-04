@@ -1,19 +1,42 @@
 // src/pages/Home.js
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 
 const Home = () => {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const playMusic = () => {
+      if (audioRef.current) {
+        audioRef.current.play().catch((error) => {
+          console.error("خطا در پخش موسیقی:", error);
+        });
+      }
+    };
+
+    playMusic();
+  }, []);
+
   return (
     <div
       className="min-h-screen bg-cover bg-center relative flex flex-col"
-      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/pic/home-background.jpg)` }} // استفاده از backticks
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/pic/home-background.jpg)`,
+      }}
     >
+      {/* پخش کننده موسیقی */}
+      <audio
+        ref={audioRef}
+        src={`${process.env.PUBLIC_URL}/music/background-music.mp3`}
+        loop
+      />
+
       {/* Overlay برای افزایش خوانایی متن */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
-      
+
       {/* نوار ناوبری */}
       <Navbar />
 
@@ -29,7 +52,7 @@ const Home = () => {
           >
             داستان وهرام
           </motion.h1>
-          
+
           {/* زیرعنوان */}
           <motion.p
             className="text-lg md:text-2xl text-gray-200 mb-8"
@@ -39,7 +62,7 @@ const Home = () => {
           >
             سفری پر از ماجراجویی و تصمیمات حیاتی در دنیایی پساآخرالزمانی
           </motion.p>
-          
+
           {/* دکمه شروع داستان */}
           <motion.div
             initial={{ scale: 0 }}

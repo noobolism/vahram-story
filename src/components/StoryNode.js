@@ -21,7 +21,7 @@ const StoryNode = ({ text, choices, onChoice, image }) => {
 
       {/* کانتینر محتوا */}
       <div className="relative z-10 max-w-3xl mx-auto px-4 py-8 bg-transparent text-white pt-16">
-        <div className="bg-black bg-opacity-60 rounded-lg p-6">
+        <div className="bg-black bg-opacity-45 rounded-lg p-6">
           <p className="text-lg md:text-2xl mb-6 text-right leading-relaxed">
             {text}
           </p>
